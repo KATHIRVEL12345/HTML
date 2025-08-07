@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(135deg, #8de205);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background: radial-gradient(circle at 30% 30%, #fff, red);
+            border-radius: 50%;
+            animation: bounce 1s infinite;
+            box-shadow: 0 5px 15px rgb(180, 5, 233);
+        }
+
+        @keyframes bounce{
+            0%,100%{transform:translateY(0);}
+           100%{transform:translateY(-150px);}
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>
