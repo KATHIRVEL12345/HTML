@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+            display: flex;
+            font-size: 60px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dancer{
+            animation: dance 2.5s infinite ease-in-out;
+            transform-origin: bottom center;
+        }
+        @keyframes dance{
+           0%{
+            transform: rotate(-20deg)
+            translateY(0);
+           }
+           100% {
+            transform:rotate(20deg) translateY(-10px);
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="dancer">
+        <p>&#128512;</p>
+        <p>&#128513;</p>
+        <p>&#128514;</p>
+        <p>&#128515;</p>
+        <p>&#128516;</p>
+    </div>
+</body>
+</html>
